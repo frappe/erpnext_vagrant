@@ -11,6 +11,6 @@
 1. Clone this repo into a local folder with `git clone https://github.com/frappe/erpnext_vagrant.git erpnext_vagrant`
 2. Start your virtual machine by running `vagrant up`
 3. Connect to your guest system via SSH with `vagrant ssh`
-4. Set `"developer_mode": 1` in `frappe-bench/sites/site1.local/site_config.json`, for example by running `vim ~/frappe-bench/sites/site1.local/site_config.json`. When in vim press `i` to insert text. After inserting press `ESC` and write `:wq` to write and quite the file. More on vim here https://www.linux.com/learn/tutorials/228600-vim-101-a-beginners-guide-to-vim.
-5. Go to your frappe-bench folder with `cd ~/frappe-bench/` and start bench with `bench start`
-6. Open your browser on your host system and work on your ERPNExt by browsing to `http://localhost:8000/` or `http://127.0.0.1:8000`
+4. Set `"developer_mode": 1` in `/vagrant/frappe-bench/sites/site1.local/site_config.json`, for example by running `vim /vagrant/frappe-bench/sites/site1.local/site_config.json`. When in vim press `i` to insert text. After inserting press `ESC` and write `:wq` to write and quite the file. More on vim here https://www.linux.com/learn/tutorials/228600-vim-101-a-beginners-guide-to-vim.
+5. Go to your frappe-bench folder with `cd /vagrant/frappe-bench/` and start bench with `bench start`
+6. Open your browser on your host system and work on your ERPNExt by browsing to `http://localhost:8080/` or `http://127.0.0.1:8080`
