@@ -60,7 +60,7 @@ bench new-site site1.local --mariadb-root-password root --admin-password admin -
 bench use site1.local
 
 bench setup socketio
-bench setup procfile --with-watch --with-async-broker
+bench setup procfile --with-watch --with-celery-broker
 
 EOF
 
