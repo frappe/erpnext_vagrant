@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export DEBIAN_FRONTEND=noninteractive
-debconf-set-selections <<< "postfix postfix/mailname string `hostname`"
+debconf-set-selections <<< "postfix postfix/mailname string $(hostname)"
 debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 debconf-set-selections <<< "mariadb-server-5.5 mysql-server/root_password password root"
 debconf-set-selections <<< "mariadb-server-5.5 mysql-server/root_password_again password root"
@@ -66,5 +66,5 @@ EOF
 
 echo "Installed"
 
-echo "To start, use `vagrant ssh`, go to /vagrant/frappe-bench and run bench start"
+echo "To start, use 'vagrant ssh', go to /vagrant/frappe-bench and run bench start"
 
