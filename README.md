@@ -1,3 +1,8 @@
+## This repo is no longer maintained. Use the [Vagrant Box](http://build.erpnext.com/ERPNext-Vagrant.box) instead.
+
+----
+
+
 # Installing prerequisites under Windows: #
 
 1. Download and install **Virtual Box**. Attention! There are known problems with VirtualBox 5.0.2 on Windows 10 hosts and with Windows 10 guests. Some of the problems are fixed in the most recent test build which can be found at https://www.virtualbox.org/wiki/Testbuilds.
